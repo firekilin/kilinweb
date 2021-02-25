@@ -1,0 +1,11 @@
+.indexButton {
+  height: 10rem;
+}
+
+.col-sm-4 {
+  margin-top: 30px;
+}
+
+button.btn.btn-outline-secondary {
+  height: 100%;
+}
