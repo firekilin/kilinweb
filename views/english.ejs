@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+
+  <!--bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <!--index.css-->
+  <link href="./public/css/index.css" rel="stylesheet">
+  <!--english.js-->
+  <script src="./public/js/english.js" defer="defer"></script>
+
+</head>
+
+<body>
+  <p>
+  </p>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm">
+      <input onclick="getdata.speak()" type='button' value='🔊 Play' />
+      </div>
+      <div class="col-sm">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <div class="card-title"  id="enItemContent">234</div>
+            <a class="btn btn-primary" data-toggle="collapse" data-target="#anserShow" role="button" aria-expanded="false" aria-controls="anserShow">
+              顯示答案
+            </a>
+            <button type="button" class="btn btn-outline-secondary" id="changee" onclick="getdata.enItemchange()">更換</button>
+            <div class="collapse" id="anserShow">
+              <div class="card card-body">
+                <div id="enItemAnser">567</div>
+                <div id="enItemType">890</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col-sm">
+   
+      </div>
+    </div>
+    
+  </div>
+
+
+
+
+  
+</body>
+
+</html>

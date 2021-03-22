@@ -2,8 +2,8 @@ app:
   port: 3000
 
 db:
-  host: '127.0.0.1'
+  host: 'kilincat.servegame.com'
   port: 3306
   database: 'kilinweb'
   user: 'kilin'
-  password: '5270'
+  password: '13145270'

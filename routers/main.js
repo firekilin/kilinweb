@@ -18,4 +18,9 @@ router.get('/login', async(req, res)=>{
   } 
 });// path(\login)
 
+router.get('/english', async(req, res)=>{
+  res.render("english");
+});
+
+
 module.exports = router;
