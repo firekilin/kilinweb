@@ -1,18 +1,16 @@
-"use strict";
+'use strict';
 
-var getdata = this.getdata?(()=>{throw new Error()})():{};
+var getdata = this.getdata ? (() => {throw new Error ();}) () : {};
 
-$(()=>{
+$ (() => {
 
-  getdata.data = "20";
+  getdata.data = '20';
 
-  $.post("../api/getdata", 
-    {
-       firstdata:'first',seconddata:"second"
-    }, (data,status)=>{
-       console.log(data);
+  $.post ('../api/getdata', 
+    { firstdata: 'first', seconddata: 'second' }, (data, status) => {
+      console.log (data);
     }
-  )
+  );
 
 });
-console.log(getdata.data);
+console.log (getdata.data);

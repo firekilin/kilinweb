@@ -1,26 +1,26 @@
-const mysql = require('mysql');
-const config = require('config');
+const mysql = require ('mysql');
+const config = require ('config');
 
-const myPool = mysql.createPool({
+const myPool = mysql.createPool ({
   connectionLimit: 200,
-  host: config.get('db.host'),
-  user: config.get('db.user'),
-  port: config.get('db.port'),
-  password: config.get('db.password'),
-  database: config.get('db.database')
+  host: config.get ('db.host'),
+  user: config.get ('db.user'),
+  port: config.get ('db.port'),
+  password: config.get ('db.password'),
+  database: config.get ('db.database')
 });
 
-exports.query = (sql, values) =>{
-  return new Promise((resolve, reject) =>{
-    myPool.query(sql, values, (err, rows) =>{
-      if(err) {
-        resolve(false);
-        console.log(err + " , " + rows);
-      }else{
-        resolve(rows);
+exports.query = (sql, values) => {
+  return new Promise ((resolve, reject) => {
+    myPool.query (sql, values, (err, rows) => {
+      if (err) {
+        resolve (false);
+        console.log (err + ' , ' + rows);
+      } else {
+        resolve (rows);
       }
-    })
-  })
-}
+    });
+  });
+};
 
 module.exports = exports;

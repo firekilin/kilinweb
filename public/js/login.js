@@ -1,17 +1,15 @@
-"use strict";
+'use strict';
 
-let login = this.login?(()=>{throw new Error()})():{};
+let login = this.login ? (() => {throw new Error ();}) () : {};
 
-$(()=>{
-  login.login = ()=>{
-      $.post('/api/login',
-        {
-          account:$("#account").val(),
-          ps: $("#ps").val()
-        },
-        (data, status)=>{
-          alert(data);
+$ (() => {
+  login.login = () => {
+    $.post ('/api/login',
+      { account: $ ('#account').val (),
+        ps: $ ('#ps').val () },
+      (data, status) => {
+        alert (data);
       });
-      return false;
-  }
+    return false;
+  };
 });
