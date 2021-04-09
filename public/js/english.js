@@ -32,8 +32,10 @@ $ (() => {
       dataValueField: 'value',
       dataSource: getdata.setList,
       select: function(e) {
+  
+        $.post ('/api/getEnglish', { id: e.dataItem.value }, (data, status) => {
 
-   
+        });
       }
  
 

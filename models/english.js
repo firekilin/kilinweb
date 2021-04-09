@@ -3,7 +3,7 @@ const query = db.query;
 
 
 exports.getEnglish = async(req, res) => {
-  let list = req.body.listnum;
+  let list = req.body.id;
   let engList = [];
   let engItem = await query (`SELECT * FROM kilinweb.english_word where EL_id='${list}';`);
   for (let i = 0;i < engItem.length;i ++){
@@ -13,6 +13,7 @@ exports.getEnglish = async(req, res) => {
   }
   return engList;
 };
+
 exports.getEnglishList = async(req, res) => {
   let engList = [];
   let engItem = await query (`SELECT * FROM kilinweb.english_list;`);
