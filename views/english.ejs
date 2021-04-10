@@ -33,33 +33,33 @@
 <body>
   <p>
   </p>
-  <div class="container">
+  <div  class="container-lg fs-2">
     <input type="text" name="english" id="selectEnglish">
-    <table class="table">
+    <table class="table table-dark table-hover">
       <thead>
         <tr>
           <th scope="col">編號</th>
           <th scope="col">英文</th>
           <th scope="col">翻譯</th>
           <th scope="col">詞性</th>
+          <th scope="col">難易度</th>
+          <th scope="col">顯示</th>
+          <th scope="col">劍橋</th>
         </tr>
       </thead>
       <tbody id="engtable">
         <tr>
-          <th class="EW_id" scope="row">123</th>
+          <th class="EW_id" scope="row"></th>
           <td class="EW_content"></td>
           <td class="EW_translation"></td>
           <td class="EW_type"></td>
-          <td class="EW_seach"></td>
+          <td class="EW_level"></td>
+          <td class="show"></td>
+          <td class="search"></td>
         </tr>
      
       </tbody>
     </table>
-
-
-    <input onclick="getdata.speak()" type='button' value='🔊 Play' />
-
-
 
     
   </div>

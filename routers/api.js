@@ -30,5 +30,8 @@ router.post ('/getEnglishList', async(req, res) => {
   res.send (await english.getEnglishList (req, res));
 });
 
+router.post ('/setEnglishLevel', async(req, res) => {
+  res.send (await english.setEnglishLevel (req, res));
+});
 
 module.exports = router;
