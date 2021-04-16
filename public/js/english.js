@@ -8,7 +8,16 @@ $ (() => {
   getdata.say = (m, a) => {
     var msg = new SpeechSynthesisUtterance ();
     var voices = window.speechSynthesis.getVoices ();
-    msg.voice = voices[a];
+    let voicc;
+    for (let i = 0;i < voices.length;i ++){
+      if (voices[i].voiceURI == 'Samantha'){
+        voicc = voices[i];
+        break;
+      } else if (voices[i].lang == 'en-US'){
+        voicc = voices[i];
+      }
+    }
+    msg.voice = voicc;
     msg.voiceURI = 'native';
     msg.volume = 1;
     msg.rate = 1;
