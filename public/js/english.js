@@ -5,7 +5,7 @@ var getdata = this.getdata ? (() => {throw new Error ();}) () : {};
 $ (() => {
   getdata.type = ['名詞', '動詞', '形容詞', '副詞', '代名詞', '介系詞', '連接詞', '感嘆詞'];
   //設定語音
-  getdata.say = (m, a) => {
+  getdata.say = (m) => {
     var msg = new SpeechSynthesisUtterance ();
     var voices = window.speechSynthesis.getVoices ();
     let voicc;
@@ -48,7 +48,7 @@ $ (() => {
 
   getdata.show = (data) => {
     $ (`.toggle${data}`).toggle ();
-    getdata.say ($ ('.EW_content')[data].innerHTML, 34);
+    getdata.say ($ ('.EW_content')[data].innerHTML);
 
   };
  
