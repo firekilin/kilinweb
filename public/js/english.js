@@ -18,10 +18,10 @@ $ (() => {
       }
     }
     msg.voice = voicc;
-    msg.voiceURI = 'native';
+    msg.voiceURI = 'Google US English';
     msg.volume = 1;
     msg.rate = 1;
-    msg.pitch = 0.8;
+    msg.pitch = 1;
     msg.text = m;
     msg.lang = 'en-*';
     speechSynthesis.speak (msg);
