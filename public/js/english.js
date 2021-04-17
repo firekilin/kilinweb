@@ -8,17 +8,17 @@ $ (() => {
   getdata.say = (m) => {
     var msg = new SpeechSynthesisUtterance ();
     var voices = window.speechSynthesis.getVoices ();
+    alert (voices[i]);
     let voicc;
     for (let i = 0;i < voices.length;i ++){
-      if (voices[i].voiceURI == 'Samantha'){
+      alert (voices[i]);
+      if (voices[i].lang == 'en-US'){
         voicc = voices[i];
         break;
-      } else if (voices[i].lang == 'en-US'){
-        voicc = voices[i];
       }
     }
     msg.voice = voicc;
-    msg.voiceURI = 'Google US English';
+    msg.voiceURI = 'native';
     msg.volume = 1;
     msg.rate = 1;
     msg.pitch = 1;
